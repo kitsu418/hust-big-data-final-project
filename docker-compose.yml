@@ -73,6 +73,7 @@ services:
       - datanode1
       - datanode2
       - datanode3
+			- datanode4
 
   nodemanager1:
     image: bde2020/hadoop-nodemanager:2.0.0-hadoop3.2.1-java8
@@ -86,6 +87,7 @@ services:
       - datanode1
       - datanode2
       - datanode3
+			- datanode4
 
   historyserver:
     image: bde2020/hadoop-historyserver:2.0.0-hadoop3.2.1-java8
@@ -101,6 +103,7 @@ services:
       - datanode1
       - datanode2
       - datanode3
+			- datanode4
 
 volumes:
   hadoop_namenode:
